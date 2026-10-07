@@ -165,7 +165,18 @@ footer { padding: 4rem; text-align: center; font-family: var(--f-mono); font-siz
     nav a { font-size: 0.55rem; letter-spacing: 1px; }
 
     .hero { padding: 7rem 1.2rem 3rem; min-height: auto; height: auto; }
-    .hero-img { display: none; }
+    .hero-img { 
+        display: block; 
+        position: absolute; 
+        right: -10vw; 
+        top: 0; 
+        width: 110vw; 
+        height: 100%; 
+        opacity: 0.3; 
+        mask-image: linear-gradient(to bottom, black 30%, transparent 90%);
+        pointer-events: none;
+        z-index: 1;
+    }
     .hero-text { transform: none; opacity: 1; max-width: 100%; }
     .hero-label { font-size: 0.5rem; letter-spacing: 5px; margin-bottom: 1rem; }
     h1 { font-size: clamp(2.8rem, 11vw, 5rem); line-height: 0.9; }
